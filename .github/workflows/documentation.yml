@@ -14,6 +14,6 @@ jobs:
       with:
         recursive: true
         recursive-path: modules
-        working-dir: ./
+        working-dir: .
         config-file: .github/docs/.terraform-docs.yml
         git-push: "true"
