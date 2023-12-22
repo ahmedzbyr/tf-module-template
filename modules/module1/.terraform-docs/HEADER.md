@@ -1,3 +1,3 @@
-# Module 1
+# Module 1 Name
 
 Header information goes here....
