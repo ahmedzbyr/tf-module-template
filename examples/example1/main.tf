@@ -19,3 +19,11 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+
+module "create_fs" {
+  source      = "git::https://github.com/ahmedzbyr/taealam.git///tf_modules/firestore/firestore_database"
+  project     = "my-project-id"
+  name        = "ahmed"
+  location_id = "nam5"
+  type        = "DATASTORE_MODE"
+}
