@@ -1,6 +1,6 @@
 <!-- BEGIN_TF_DOCS -->
 
-# Module 1
+# Module 2 Name
 
 Header information goes here....
 
