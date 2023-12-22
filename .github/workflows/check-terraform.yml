@@ -1,0 +1,29 @@
+name: Terraform Example Checks
+on:
+  - pull_request
+
+jobs:
+  defaults:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: hashicorp/setup-terraform@v3
+
+    - name: Terraform fmt
+      id: fmt
+      run: |
+        cd examples/example2
+        terraform fmt -check
+      continue-on-error: true
+
+    - name: Terraform Init
+      id: init
+      run: |
+        cd examples/example2
+        terraform init
+
+    - name: Terraform Validate
+      id: validate
+      run: |
+        cd examples/example2
+        terraform validate -no-color
