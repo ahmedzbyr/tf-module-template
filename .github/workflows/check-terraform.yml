@@ -12,18 +12,18 @@ jobs:
     - name: Terraform fmt
       id: fmt
       run: |
-        cd examples/example2
+        cd examples/example1
         terraform fmt -check
       continue-on-error: true
 
     - name: Terraform Init
       id: init
       run: |
-        cd examples/example2
+        cd examples/example1
         terraform init
 
     - name: Terraform Validate
       id: validate
       run: |
-        cd examples/example2
+        cd examples/example1
         terraform validate -no-color
